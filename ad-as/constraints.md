@@ -16,7 +16,7 @@ Automated tests:
 
 * An address shall have an admin unit address component spatial object whose level is 1 (Country); OCL: "inv: self.component -> forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))". 
   * NOTE: This is already tested in country-address-components.md
-* An address shall have exactly one default geographic position (default attribute of GeographicPosition must be true); OCL: "inv: self.position -> one(a1 | a1.default = true)". Verify that for each [address](#address) that there is only one [GeographicPosition](#GeographicPosition) with value true for the [default](#default) attribute.  
+* An address shall have exactly one default geographic position (default attribute of GeographicPosition must be true); OCL: "inv: self.position -> one(a1 | a1.default = true)". Verify that for each [address](#address) that there is only one [GeographicPosition](#GeographicPosition) with value true for the [default attribute](#default).  
 * If no post code exists, a post name is required.; OCL: "inv: self.postCode->isEmpty() implies self.postName->notEmpty()". Verify that if there is no [postCode](#postCode) value, there is a [postName](#postName) value.
 * If no post name exists, a post code is required.; OCL: "inv: self.postName->isEmpty() implies self.postCode->notEmpty()". Verify that if there is no [postName](#postName) value, there is a [postCode](#postCode) value.
 * If no designator exists, a name is required.; OCL: "inv: self.designator->isEmpty() implies self.name->notEmpty()". Verify that if there is no [designator](#designator) value, there is a [name](#name) value.
@@ -42,8 +42,10 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-nationalLevel <a name="nationalLevel"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:nationalLevel/@xlink:href or //schema-element(au3:AdministrativeUnit)/au3:nationalLevel/text()
-upperLevelUnit <a name="upperLevelUnit"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:upperLevelUnit
-lowerLevelUnit <a name="lowerLevelUnit"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:lowerLevelUnit
-condominium <a name="condominium"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:condominium
-
+address <a name="address"></a> 	| 	//schema-element(ad:address)
+GeographicPosition <a name="GeographicPosition"></a> 	| 	//schema-element(ad:address)/ad:position/ad:GeographicPosition
+default attribute <a name="default"></a> 	| 	//schema-element(ad:address)/ad:position/ad:GeographicPosition/ad:default
+postCode <a name="postCode"></a> 	| 	//schema-element(ad:PostalDescriptor)/ad:position/ad:PostalDescriptor/ad:postCode
+postName <a name="postName"></a> 	| 	//schema-element(ad:PostalDescriptor)/ad:position/ad:PostalDescriptor/ad:postName
+designator <a name="designator"></a> 	| 	//schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:designator
+name <a name="name"></a> 	| 	//schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:name
