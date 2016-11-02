@@ -15,7 +15,7 @@ For constraints that require retrieving a referenced resource and the resource c
 Automated tests:
 
 * An address shall have an admin unit address component spatial object whose level is 1 (Country); OCL: "inv: self.component -> forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))". 
-  This is already tested in country-address-components.md
+  * This is already tested in country-address-components.md
 * An address shall have exactly one default geographic position (default attribute of GeographicPosition must be true); OCL: "inv: self.position -> one(a1 | a1.default = true)". Verify that for each [address](#address) that there is only one [GeographicPosition](#GeographicPosition) with value true for the [default](#default) attribute.  
 * If no post code exists, a post name is required.; OCL: "inv: self.postCode->isEmpty() implies self.postName->notEmpty()". Verify that if there is no [postCode](#postCode) value, there is a [postName](#postName) value.
 * If no post name exists, a post code is required.; OCL: "inv: self.postName->isEmpty() implies self.postCode->notEmpty()". Verify that if there is no [postName](#postName) value, there is a [postCode](#postCode) value.
