@@ -2,7 +2,7 @@
 
 **Version**: 1
 
-**Purpose**: Verify whether, in the data set, the position of the address is represented by the coordinates of the actual location with the best available accuracy. 
+**Purpose**: Verify whether, in the data set, the position of the address is represented by the coordinates of the actual location with the best available accuracy. This is the most precise directly captured coordinates or, if none exist, then coordinates derived from one of the address components, with priority given to the component that allows the position to be most accurately determined.
 
 **Prerequisites**
 
