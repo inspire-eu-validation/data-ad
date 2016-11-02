@@ -1,4 +1,4 @@
-# Conformance class: Application schema, Addresses (DRAFT)
+# Conformance class: Application schema, Addresses Simple (DRAFT)
 
 Conformance class for the requirements associated with the application schema. 
 
