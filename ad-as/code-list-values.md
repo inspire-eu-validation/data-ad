@@ -134,12 +134,12 @@ Inspect the code list valued property elements. If a value is not one of the val
   
 **Reference(s)**: 
 
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/au-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (1)
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/au-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (3)
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/au-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (1)l
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/au-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (2)
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/au-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (3)
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/au-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (4)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (1)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (3)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (1)l
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (2)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (3)
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 6 (4)
 
 **Test type**: Automated
 
