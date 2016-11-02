@@ -16,23 +16,29 @@ Otherwise report [disallowedCodeListValue](#disallowedCodeListValue).
 
 In the Addresses application schema, the following properties have to be tested:
 * [GeometryMethodValue (v3)](#GeometryMethodValue3). Valid values:
-  * 1stOrder
-  * 2ndOrder
-  * 3rdOrder
-  * 4thOrder
-  * 5thOrder
-  * 6thOrder
+  * fromFeature
+  * byAdministrator
+  * byOtherParty
 * [GeometryMethodValue (v4)](#GeometryMethodValue4). Valid values:
   * http://inspire.ec.europa.eu/codelist/GeometryMethodValue/byAdministrator
   * http://inspire.ec.europa.eu/codelist/GeometryMethodValue/byOtherParty
   * http://inspire.ec.europa.eu/codelist/GeometryMethodValue/fromFeature
 * [GeometrySpecificationValue (v3)](#GeometrySpecificationValue3). Valid values:
-  * 1stOrder
-  * 2ndOrder
-  * 3rdOrder
-  * 4thOrder
-  * 5thOrder
-  * 6thOrder
+  * postalDelivery
+  * utilityService
+  * thoroughfareAccess
+  * entrance
+  * building
+  * parcel
+  * segment
+  * postalDescriptor
+  * addressArea
+  * adminUnit1stOrder
+  * adminUnit2ndOrder
+  * adminUnit3rdOrder
+  * adminUnit4thOrder
+  * adminUnit5thOrder
+  * adminUnit6thOrder
 * [GeometrySpecificationValue (v4)](#GeometrySpecificationValue4). Valid values:
   * http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/addressArea
   * http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/adminUnit1stOrder
@@ -50,12 +56,20 @@ In the Addresses application schema, the following properties have to be tested:
   * http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/thoroughfareAccess
   * http://inspire.ec.europa.eu/codelist/GeometrySpecificationValue/utilityService
 * [LocatorDesignatorTypeValue (v3)](#LocatorDesignatorTypeValue3). Valid values:
-  * 1stOrder
-  * 2ndOrder
-  * 3rdOrder
-  * 4thOrder
-  * 5thOrder
-  * 6thOrder
+  * addressIdentifierGeneral
+  * addressNumber
+  * addressNumberExtension
+  * addressNumber2ndExtension
+  * buildingIdentifier
+  * buildingIdentifierPrefix
+  * entranceDoorIdentifier
+  * staircaseIdentifier
+  * floorIdentifier
+  * unitIdentifier
+  * postalDeliveryIdentifier
+  * kilometrePoint
+  * cornerAddress1stIdentifier
+  * cornerAddress2ndIdentifier
 * [LocatorDesignatorTypeValue (v4)](#LocatorDesignatorTypeValue4). Valid values:
   * http://inspire.ec.europa.eu/codelist/LocatorDesignatorTypeValue/addressIdentifierGeneral
   * http://inspire.ec.europa.eu/codelist/LocatorDesignatorTypeValue/addressNumber
@@ -72,48 +86,41 @@ In the Addresses application schema, the following properties have to be tested:
   * http://inspire.ec.europa.eu/codelist/LocatorDesignatorTypeValue/staircaseIdentifier
   * http://inspire.ec.europa.eu/codelist/LocatorDesignatorTypeValue/unitIdentifier
 * [LocatorLevelValue (v3)](#LocatorLevelValue3). Valid values:
-  * 1stOrder
-  * 2ndOrder
-  * 3rdOrder
-  * 4thOrder
-  * 5thOrder
-  * 6thOrder
+  * siteLevel
+  * accessLevel
+  * unitLevel
+  * postalDeliveryPoint
 * [LocatorLevelValue (v4)](#LocatorLevelValue4). Valid values:
   * http://inspire.ec.europa.eu/codelist/LocatorLevelValue/accessLevel
   * http://inspire.ec.europa.eu/codelist/LocatorLevelValue/postalDeliveryPoint
   * http://inspire.ec.europa.eu/codelist/LocatorLevelValue/siteLevel
   * http://inspire.ec.europa.eu/codelist/LocatorLevelValue/unitLevel
 * [LocatorNameTypeValue (v3)](#LocatorNameTypeValue3). Valid values:
-  * 1stOrder
-  * 2ndOrder
-  * 3rdOrder
-  * 4thOrder
-  * 5thOrder
-  * 6thOrder
+  * siteName
+  * buildingName
+  * roomName
+  * descriptiveLocator
 * [LocatorNameTypeValue (v4)](#LocatorNameTypeValue4). Valid values:
   * http://inspire.ec.europa.eu/codelist/LocatorNameTypeValue/buildingName
   * http://inspire.ec.europa.eu/codelist/LocatorNameTypeValue/descriptiveLocator
   * http://inspire.ec.europa.eu/codelist/LocatorNameTypeValue/roomName
   * http://inspire.ec.europa.eu/codelist/LocatorNameTypeValue/siteName
 * [PartTypeValue (v3)](#PartTypeValue3). Valid values:
-  * 1stOrder
-  * 2ndOrder
-  * 3rdOrder
-  * 4thOrder
-  * 5thOrder
-  * 6thOrder
+  * name
+  * namePrefix
+  * type
+  * qualifier
 * [PartTypeValue (v4)](#PartTypeValue4). Valid values:
   * http://inspire.ec.europa.eu/codelist/PartTypeValue/name
   * http://inspire.ec.europa.eu/codelist/PartTypeValue/namePrefix
   * http://inspire.ec.europa.eu/codelist/PartTypeValue/qualifier
   * http://inspire.ec.europa.eu/codelist/PartTypeValue/type
 * [StatusValue (v3)](#StatusValue3). Valid values:
-  * 1stOrder
-  * 2ndOrder
-  * 3rdOrder
-  * 4thOrder
-  * 5thOrder
-  * 6thOrder
+  * current
+  * retired
+  * proposed
+  * reserved
+  * alternative
 * [StatusValue (v4)](#StatusValue4). Valid values:
   * http://inspire.ec.europa.eu/codelist/StatusValue/alternative
   * http://inspire.ec.europa.eu/codelist/StatusValue/current
