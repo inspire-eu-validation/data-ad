@@ -1,18 +1,18 @@
-# Abstract Test Suite: Data Specification on Protected Sites (DRAFT)
+# Abstract Test Suite: Data Specification on Addresses (DRAFT)
                        
-The Data Specification on Protected Sites – Technical Guidelines (version 3.2) and the associated GML application schemas (versions 3.0 and 4.0) specifying requirements for the interoperability of spatial data sets of the data theme protected sites.
+The Data Specification on Addresses – Technical Guidelines (version 3.2) and the associated GML application schemas (versions 3.0 and 4.0) specifying requirements for the interoperability of spatial data sets of the data theme Addresses.
 
 The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [GML application schema, Protected Sites Simple](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-gml) | INSPIRE spatial data set encoded in GML, Protected Sites features |
-| [Application schema, Protected Sites Simple](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-as) | INSPIRE spatial data set |
-| [Reference Systems, Protected Sites](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-rs) | INSPIRE spatial data set |
-| [Data Consistency, Protected Sites](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-dc) | INSPIRE spatial data set |
-| [Information Accessibility, Protected Sites](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-ia) | INSPIRE spatial data set |
-| [Portrayal, Protected Sites](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-portrayal) | INSPIRE view service |
-| [Metadata for interoperability, Protected Sites](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-metadata) | ISO 19115/19119 metadata record |
+| [GML application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-gml) | INSPIRE spatial data set encoded in GML, Addresses features |
+| [Application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as) | INSPIRE spatial data set |
+| [Reference Systems, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-rs) | INSPIRE spatial data set |
+| [Data Consistency, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-dc) | INSPIRE spatial data set |
+| [Information Accessibility, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-ia) | INSPIRE spatial data set |
+| [Portrayal, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal) | INSPIRE view service |
+| [Metadata for interoperability, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-metadata) | ISO 19115/19119 metadata record |
 
 ## Approach
 
@@ -20,13 +20,13 @@ We have used the following approach to represent the Abstract Test Suite based o
 
 1. There is one GML conformance class per application schema with non-abstract spatial object types. This is basically the "encoding schema validation test" from the TG conformance class in the data specifications. 
 
-2. In order to make the IR conformance classes testable, they are understood as parameterized conformance classes with the encoding rule as the parameter. Note: The concept of parameterized conformance classes is described in the [OGC Specification Model](https://portal.opengeospatial.org/files/?artifact_id=34762).
+2. In order to make the IR conformance classes testable, they are understood as parameterized conformance classes with the encoding rule as the parameter. Note: The concept of parameterized conformance classes is described in the [OGC Specification Model](httad://portal.opengeospatial.org/files/?artifact_id=34762).
 
 3. All XPath expressions in the IR conformance classes are based on the default GML encoding rule. I.e., the current versions of the IR conformance classes are parametrized with the default GML encoding rule and have an indirect dependency to the GML application schema conformance class.  
 
 4. As a result, there is no need for an encoding-related, data delivery IR conformance class. Instead, the details how to test the conformance for any additional encoding rule would need to be added to the relevant tests and a new conformance class for the validation against the schemas would be added.
 
-5. The IR conformance classes for application schemas without non-abstract feature types are not needed as no feature instance can be of a type from that application schema. Note that this has no effect in the data theme "Protected Sites"
+5. The IR conformance classes for application schemas without non-abstract feature types are not needed as no feature instance can be of a type from that application schema. Note that this has no effect in the data theme "Addresses"
 
 6. All generic tests related to the GML encoding rule are moved to a new INSPIRE GML conformance class (that should become part of D2.7 in a future revision) and which all other TG conformance classes would normatively reference / depend on.
 
@@ -40,11 +40,11 @@ Note that the TG conformance class is "informative" in the data specification. H
 
 The INSPIRE technical guidance documents are in general unspecific on the details of HTTP requests to access resources. The following rules apply to all HTTP requests unless a test case explicitly states deviations from these rules.
 
-### Use of HTTPS
+### Use of HTTad
 
-Where HTTP is mentioned as the protocol, HTTPS may be used, too. SSL certificates must be valid and issued by a trusted Certification Authority.
+Where HTTP is mentioned as the protocol, HTTad may be used, too. SSL certificates must be valid and issued by a trusted Certification Authority.
 
-This also implies that where "HTTP URI" or "URL" is used, this includes URIs in the HTTPS scheme.
+This also implies that where "HTTP URI" or "URL" is used, this includes URIs in the HTTad scheme.
 
 ### HTTP methods
 

@@ -9,14 +9,14 @@
 Inspect the view service, either through HTTP requests or using a software tool that is able to interact with the WMS/WMTS:
  
 * Verify that all layers exist, for which the data set includes protected site features.
-* Verify for each layer that title of the layer is the one specified in the column "Layer title" in sub-clause 11.1 or one of the translations in section 8.8 in Annex II of the regulation ([IP IOP](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-portrayal/README#ref_IR_IOP), [IP IOP Amd 2](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-portrayal/README#ref_IR_IOP_Amd2)). 
-* Using spot checks, verify for each layer that the rendered maps include the protected site objects in the data set.
+* Verify for each layer that title of the layer is the one specified in the column "Layer title" in sub-clause 11.1 or one of the translations in section 8.8 in Annex II of the regulation ([IP IOP](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/README#ref_IR_IOP), [IP IOP Amd 2](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/README#ref_IR_IOP_Amd2)). 
+* Using spot checks, verify for each layer that the rendered maad include the protected site objects in the data set.
 * Verify for each layer and spatial object type included in the data set, that the default style specified in sub-clause 11.2 is implemented in the view service.
 
 **Reference(s)**:
 
-* [TG DS-PS](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-portrayal/README#ref_TG_DS_PS), IR Requirement, Article 14
-* [TG DS-PS](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-portrayal/README#ref_TG_DS_PS), TG Requirement 7
+* [TG DS-AD](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/README#ref_TG_DS_AD), IR Requirement, Article 14
+* [TG DS-AD](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/README#ref_TG_DS_AD), TG Requirement 7
 
 **Test type**: Manual
 
