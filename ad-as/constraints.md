@@ -14,21 +14,17 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
-* Sites must use [designations](#designations) from an appropriate designation scheme, and the designation code value must agree with the designation scheme. Verify that all (pre-defined) designation values are consistent with the designation scheme.
-
-    ```
-    inv: self.designationScheme = DesignationSchemeValue::natura2000 implies self.designation.oclIsKindOf(DesignationValueNatura2000) and
-    self.designationScheme = DesignationSchemeValue::emeraldNetwork implies self.designation.oclIsKindOf(DesignationValueEmeraldNetwork) and
-    self.designationScheme = DesignationSchemeValue::ramsar implies self.designation.oclIsKindOf(DesignationValueRamsar) and
-    self.designationScheme = DesignationSchemeValue::UNESCOWorldHeritage implies self.designation.oclIsKindOf(DesignationValueUNESCOWorldHeritage) and
-    self.designationScheme = DesignationSchemeValue::IUCN implies self.designation.oclIsKindOf(DesignationValueIUCN) and
-    self.designationScheme = DesignationSchemeValue::UNESCOManAndBiosphereProgramme implies self.designation.oclIsKindOf(DesignationValueUNESCOManAndBiosphereProgramme) and self.designationScheme = DesignationSchemeValue::nationalMonumentsRecord implies self.designation.oclIsKindOf(DesignationValueNationalMonumentsRecord)
-    ```
+* An address shall have an admin unit address component spatial object whose level is 1 (Country); OCL: "inv: self.component -> forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))". This is already tested in country-address-components.md
+* An address shall have exactly one default geographic position (default attribute of GeographicPosition must be true); OCL: "inv: self.position -> one(a1 | a1.default = true)". Verify that for each [address](#address) that there is only one [GeographicPosition](#GeographicPosition) with value true for the [default](#default) attribute.  
+* If no post code exists, a post name is required.; OCL: "inv: self.postCode->isEmpty() implies self.postName->notEmpty()". Verify that if there is no [postCode](#postCode) value, there is a [postName](#postName) value.
+* If no post name exists, a post code is required.; OCL: "inv: self.postName->isEmpty() implies self.postCode->notEmpty()". Verify that if there is no [postName](#postName) value, there is a [postCode](#postCode) value.
+* If no designator exists, a name is required.; OCL: "inv: self.designator->isEmpty() implies self.name->notEmpty()". Verify that if there is no [designator](#designator) value, there is a [name](#name) value.
+* If no name exists, a designator is required.; OCL: "inv: self.name->isEmpty() implies self.designator->notEmpty()". Verify that if there is no [name](#name) value, there is a [designator](#designator) value.
 
 **Reference(s)**: 
 
-* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-n-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (2)
-* [TG DS-PS](http://inspire.ec.europa.eu/id/ats/data-ps/3.2/ps-n-as/README#ref_TG_DS_PS)) 5.4
+* [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as/README#ref_TG_DS_tmpl) IR requirement Article 4 (2)
+* [TG DS-AD](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as/README#ref_TG_DS_AD)) 5.4
 
 **Test type**: Automated
 
@@ -45,6 +41,8 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-designation (v3) <a name="designation3"></a> |  //schema-element(ps3:ProtectedSite)/ps3:siteDesignation/\*[ps3:designationScheme=('IUCNDesignationValue', 'NationalMonumentsRecordDesignationValue', 'Natura2000DesignationValue', 'RamsarDesignationValue', 'UNESCOManAndBiosphereProgrammeDesignationValue', 'UNESCOWorldHeritageDesignationValue')]/ps3:designation/text()
-designation (v4) <a name="designation4"></a> |  //schema-element(ps:ProtectedSite)/ps:siteDesignation/\*[fn:substring-after(ps:designationScheme,'http://inspire.ec.europa.eu/codelist/DesignationSchemeValue/')=('IUCNDesignationValue', 'NationalMonumentsRecordDesignationValue', 'Natura2000DesignationValue', 'RamsarDesignationValue', 'UNESCOManAndBiosphereProgrammeDesignationValue', 'UNESCOWorldHeritageDesignationValue')]/ps:designation/@xlink:href
+nationalLevel <a name="nationalLevel"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:nationalLevel/@xlink:href or //schema-element(au3:AdministrativeUnit)/au3:nationalLevel/text()
+upperLevelUnit <a name="upperLevelUnit"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:upperLevelUnit
+lowerLevelUnit <a name="lowerLevelUnit"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:lowerLevelUnit
+condominium <a name="condominium"></a> 	| 	//schema-element(au:AdministrativeUnit)/au:condominium
 
