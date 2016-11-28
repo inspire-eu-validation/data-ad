@@ -2,7 +2,7 @@
 
 **Version**: 1
 
-**Purpose**: Verify that the spatial data set contains at least one Addresses feature.
+**Purpose**: Verify that the spatial data set contains at least one Address feature.
 
 **Prerequisites**
 
