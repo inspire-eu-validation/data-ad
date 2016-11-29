@@ -14,7 +14,7 @@
 
 * [TG DS Template](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as/README#ref_TG_DS_tmpl) IR requirement Section 5.5.2 (1)
 
-**Test type**: Automatic
+**Test type**: Manual
 
 **Notes**
 
