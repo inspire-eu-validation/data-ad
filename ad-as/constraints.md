@@ -14,8 +14,7 @@ For constraints that require retrieving a referenced resource and the resource c
 
 Automated tests:
 
-* An address shall have an admin unit address component spatial object whose level is 1 (Country); OCL: "inv: self.component -> forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))". 
-  * NOTE: This is already tested in country-address-components.md
+* An address shall have an admin unit address component spatial object whose level is 1 (Country); OCL: "inv: self.component -> forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))". Verify that for each [address](#address), an AdminUnitName is referenced in [component](#component) and that it is of [level](#level) 1.
 * An address shall have exactly one default geographic position (default attribute of GeographicPosition must be true); OCL: "inv: self.position -> one(a1 | a1.default = true)". Verify that for each [address](#address) that there is only one [GeographicPosition](#GeographicPosition) with value true for the [default attribute](#default).  
 * If no post code exists, a post name is required.; OCL: "inv: self.postCode->isEmpty() implies self.postName->notEmpty()". Verify that if there is no [postCode](#postCode) value, there is a [postName](#postName) value.
 * If no post name exists, a post code is required.; OCL: "inv: self.postName->isEmpty() implies self.postCode->notEmpty()". Verify that if there is no [postName](#postName) value, there is a [postCode](#postCode) value.
@@ -43,6 +42,8 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 address <a name="address"></a> 	| 	//schema-element(ad:address)
+component <a name="component"></a>   | //schema-element(ad:Address)/ad:component
+component level <a name="level"></a>  | //schema-element(ad:AdminUnitName)/ad:level
 GeographicPosition <a name="GeographicPosition"></a> 	| 	//schema-element(ad:address)/ad:position/ad:GeographicPosition
 default attribute <a name="default"></a> 	| 	//schema-element(ad:address)/ad:position/ad:GeographicPosition/ad:default
 postCode <a name="postCode"></a> 	| 	//schema-element(ad:PostalDescriptor)/ad:position/ad:PostalDescriptor/ad:postCode

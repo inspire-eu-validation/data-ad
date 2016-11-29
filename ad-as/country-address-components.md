@@ -21,6 +21,8 @@
 
 **Notes**
 
+* Point one (Check that an [address](#address) is associated to the name of the country in which it is located, i.e. there is a [component](#component) of [level](#level) 1.) is already tested in [constraints.md](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as/constraints.md), OCL constraint "inv: self.component -> forAll (a1 | exists(a1.parent.oclIsTypeOf(AdminUnitName) and a1.parent.level=1))". 
+
 ## Messages
 
 n/a
@@ -32,5 +34,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 address <a name="address"></a>   | //schema-element(ad:Address)
-component <a name="component"></a>   | //schema-element(au:Address)/ad:component
-component level <a name="level"></a>  | //schema-element(au:Address)/ad:component/ad:level
+component <a name="component"></a>   | //schema-element(ad:Address)/ad:component
+component level <a name="level"></a>  | //schema-element(ad:Address)/ad:component/ad:level
