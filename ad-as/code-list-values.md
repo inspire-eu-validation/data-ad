@@ -157,17 +157,17 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
-GeometryMethodValue (v3) <a name="GeometryMethodValue3"></a>   | //schema-element(ad3:Address)/ad3:GeographicPosition/ad3:method/text()
-GeometryMethodValue (v4) <a name="GeometryMethodValue4"></a>   | //schema-element(au:Address)/ad:GeographicPosition/ad:method/@href:xlink
-GeometrySpecificationValue (v3) <a name="GeometrySpecificationValue3"></a>   | //schema-element(ad3:Address)/ad3:GeographicPosition/ad3:specification/text()
-GeometrySpecificationValue (v4) <a name="GeometrySpecificationValue4"></a>   | //schema-element(au:Address)/ad:GeographicPosition/ad:specification/@href:xlink
-LocatorDesignatorTypeValue (v3) <a name="LocatorDesignatorTypeValue3"></a>   | //schema-element(ad3:Address)/ad3:locator/ad3:AddressLocator/ad3:LocatorDesignator/ad3:type/text()
-LocatorDesignatorTypeValue (v4) <a name="LocatorDesignatorTypeValue4"></a>   | //schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:LocatorDesignator/ad:type/@href:xlink
+GeometryMethodValue (v3) <a name="GeometryMethodValue3"></a>   | //schema-element(ad3:Address)/ad3:position/ad3:GeographicPosition/ad3:method/text()
+GeometryMethodValue (v4) <a name="GeometryMethodValue4"></a>   | //schema-element(ad:Address)/ad:position/ad:GeographicPosition/ad:method/@href:xlink
+GeometrySpecificationValue (v3) <a name="GeometrySpecificationValue3"></a>   | //schema-element(ad3:Address)/ad3:position/ad3:GeographicPosition/ad3:specification/text()
+GeometrySpecificationValue (v4) <a name="GeometrySpecificationValue4"></a>   | //schema-element(ad:Address)/ad:position/ad:GeographicPosition/ad:specification/@href:xlink
+LocatorDesignatorTypeValue (v3) <a name="LocatorDesignatorTypeValue3"></a>   | //schema-element(ad3:Address)/ad3:locator/ad3:AddressLocator/ad3:designator/ad3:LocatorDesignator/ad3:type/text()
+LocatorDesignatorTypeValue (v4) <a name="LocatorDesignatorTypeValue4"></a>   | //schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:designator/ad:LocatorDesignator/ad:type/@href:xlink
 LocatorLevelValue (v3) <a name="LocatorLevelValue3"></a>   | //schema-element(ad3:Address)/ad3:locator/ad3:AddressLocator/ad3:level/text()
-LocatorLevelValue (v4) <a name="LocatorLevelValue4"></a>   | //schema-element(au:Address)/ad:locator/ad:AddressLocator/ad:level/@href:xlink
-LocatorNameTypeValue (v3) <a name="LocatorNameTypeValue3"></a>   | //schema-element(ad3:Address)/ad3:locator/ad3:AddressLocator/ad3:level/ad3:name/text()
-LocatorNameTypeValue (v4) <a name="LocatorNameTypeValue4"></a>   | //schema-element(au:Address)/ad:locator/ad:AddressLocator/ad:level/ad:name/@href:xlink
-PartTypeValue (v3) <a name="PartTypeValue3"></a>   | //schema-element(ad3:ThoroughfareName)/ad3:nameParts/ad3:PartOfName/ad3:type/text()
-PartTypeValue (v4) <a name="PartTypeValue4"></a>   | //schema-element(ad:ThoroughfareName)/ad:nameParts/ad:PartOfName/ad:type/@href:xlink
+LocatorLevelValue (v4) <a name="LocatorLevelValue4"></a>   | //schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:level/@href:xlink
+LocatorNameTypeValue (v3) <a name="LocatorNameTypeValue3"></a>   | //schema-element(ad3:Address)/ad3:locator/ad3:AddressLocator/ad3:name/text()
+LocatorNameTypeValue (v4) <a name="LocatorNameTypeValue4"></a>   | //schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:name/@href:xlink
+PartTypeValue (v3) <a name="PartTypeValue3"></a>   | //schema-element(ad3:ThoroughfareName)/ad3:name/ad3:ThoroughfareNameValue/ad3:nameParts/ad3:PartOfName/ad3:type/text()
+PartTypeValue (v4) <a name="PartTypeValue4"></a>   | //schema-element(ad:ThoroughfareName)/ad:name/ad:ThoroughfareNameValue/ad:nameParts/ad:PartOfName/ad:type/@href:xlink
 StatusValue (v3) <a name="StatusValue3"></a>   | //schema-element(ad3:Address)/ad3:status/text()
-StatusValue (v4) <a name="StatusValue4"></a>   | //schema-element(au:Address)/ad:status/@href:xlink
+StatusValue (v4) <a name="StatusValue4"></a>   | //schema-element(ad:Address)/ad:status/@href:xlink
