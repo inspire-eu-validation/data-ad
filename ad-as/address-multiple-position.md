@@ -30,5 +30,5 @@ The namespace prefixes used as described in [README.md](http://inspire.ec.europa
 Abbreviation                                               |  XPath expression
 ---------------------------------------------------------- | -------------------------------------------------------------------------
 address <a name="address"></a>   | //schema-element(ad:Address)
-position <a name="position"></a>   | //schema-element(au:Address)/ad:position
-specification attribute <a name="specification"></a>  | //schema-element(au:Address)/ad:position/ad:specification
+position <a name="position"></a>   | //schema-element(ad:Address)/ad:position
+specification attribute <a name="specification"></a>  | //schema-element(ad:Address)/ad:position/ad:GeographicPosition/ad:specification/@xlink:href or //schema-element(ad3:Address)/ad3:position/ad3:GeographicPosition/ad3:specification/text()
