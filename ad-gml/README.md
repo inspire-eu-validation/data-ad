@@ -2,7 +2,7 @@
 
 Conformance class for the GML encoding of spatial objects specified in the INSPIRE GML application schema 'Addresses Simple'. This conformance class examines the data set against requirements associated with the GML application schema. Both currently approved GML application schema versions (3.0 and 4.0) are tested.
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.1).
 
 ## Standardization target type
 
@@ -28,14 +28,14 @@ The following abbreviations are used in the test text for referring to external 
 
 Abbreviation                     | Document name
 -------------------------------- | --------------------------------------------------
-TG DS-AD <a name="ref_TG_DS_AD"></a>   | [INSPIRE Data Specification on Addresses – Technical Guidelines version 3.2](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.2.pdf)
+TG DS-AD <a name="ref_TG_DS_AD"></a>   | [INSPIRE Data Specification on Addresses – Technical Guidelines version 3.1](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.1.pdf)
 TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf)
 
 ## Test Cases
 
 | Identifier                                                        | Status   | Test case in [TG DS-AD](#ref_TG_DS_AD)  |
 | ----------------------------------------------------------------- | -------- | ------------ |
-| [Basic test](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-gml/basic)  | ready for review  | A.1.1, (A.6.1)  |
+| [Basic test](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-gml/basic)  | ready for review  | A.1.1, (A.6.1)  |
 
 ## XML namespace prefixes <a name="namespaces"></a>
 

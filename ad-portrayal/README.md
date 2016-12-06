@@ -1,6 +1,6 @@
 # Conformance class: Portrayal, Addresses (DRAFT)
 
-This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2).
+This conformance class is part of the [Abstract Test Suite for the INSPIRE Data Specification on Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.1).
 
 ## Standardization target type
 
@@ -32,7 +32,7 @@ A Conformance class may be parameterized, i.e. the class’s tests depend on som
 
 | Abbreviation | Document name                       |
 | ------------ | ----------------------------------- |
-| TG DS-AD <a name="ref_TG_DS_AD"></a>   | [INSPIRE Data Specification on Addresses – Technical Guidelines version 3.2](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.2.pdf)
+| TG DS-AD <a name="ref_TG_DS_AD"></a>   | [INSPIRE Data Specification on Addresses – Technical Guidelines version 3.1](http://inspire.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_AD_v3.1.pdf)
 | TG DS Template <a name="ref_TG_DS_tmpl"></a>   | [INSPIRE Data Specification Template version 3.0rc3](http://inspire.jrc.ec.europa.eu/documents/Data_Specifications/INSPIRE_DataSpecification_Template_v3.0rc3.pdf)
 | TG VS <a name="ref_TG_VS"></a>   | [Technical Guidance for the implementation of INSPIRE View Services 3.11](http://inspire.jrc.ec.europa.eu/documents/Network_Services/TechnicalGuidance_ViewServices_v3.11.pdf)
 | IR IOP <a name="ref_IR_IOP"><a/> | [COMMISSION REGULATION (EU) No 1089/2010 of 23 November 2010 implementing Directive 2007/2/EC of the European Parliament and of the Council as regards interoperability of spatial data sets and services](http://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L:2010:323:FULL&from=EN)
@@ -44,8 +44,8 @@ This Conformance Class contains the following tests.
 
 | Identifier                                                                          | Status   |
 | ----------------------------------------------------------------------------------- | -------- |
-| [Layers](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/layers) | Ready for review |
-| [Layer name](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal/layer-name) | Ready for review |
+| [Layers](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-portrayal/layers) | Ready for review |
+| [Layer name](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-portrayal/layer-name) | Ready for review |
 
 ## Open issues
 
