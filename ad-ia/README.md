@@ -32,7 +32,12 @@ An indirect dependency is another conformance class whose requirements must be m
 
 The instantiable feature types are:
 
-* ProtectedSite
+* Address
+* AddressAreaName
+* AddressComponent
+* AdminUnitName
+* PostalDescriptor
+* ThoroughfareName
 
 *Note*: When "features" or "spatial objects" are mentioned in the test cases, this refers only to instances of feature types of this application schema, not to any types specified in any other application schema.
 

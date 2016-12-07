@@ -6,7 +6,7 @@ This conformance class is part of the [Abstract Test Suite for the INSPIRE Data 
 
 ## Standardization target type
 
-INSPIRE spatial data set encoded in GML, Protected Site features
+INSPIRE spatial data set encoded in GML, Addresses features
 
 ## Dependencies
 
