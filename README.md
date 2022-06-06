@@ -6,13 +6,13 @@ The specification specifies the following conformance classes:
 
 | Conformance class | Standardization target |
 | ----------------- | ---------------------- |
-| [GML application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-gml) | INSPIRE spatial data set encoded in GML, Addresses features |
-| [Application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-as) | INSPIRE spatial data set |
-| [Reference Systems, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-rs) | INSPIRE spatial data set |
-| [Data Consistency, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-dc) | INSPIRE spatial data set |
-| [Information Accessibility, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-ia) | INSPIRE spatial data set |
-| [Portrayal, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-portrayal) | INSPIRE view service |
-| [Metadata for interoperability, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.2/ad-metadata) | ISO 19115/19119 metadata record |
+| [GML application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-gml) | INSPIRE spatial data set encoded in GML, Addresses features |
+| [Application schema, Addresses Simple](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-as) | INSPIRE spatial data set |
+| [Reference Systems, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-rs) | INSPIRE spatial data set |
+| [Data Consistency, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-dc) | INSPIRE spatial data set |
+| [Information Accessibility, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-ia) | INSPIRE spatial data set |
+| [Portrayal, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-portrayal) | INSPIRE view service |
+| [Metadata for interoperability, Addresses](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-metadata) | ISO 19115/19119 metadata record |
 
 ## Approach
 
