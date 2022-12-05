@@ -12,16 +12,16 @@
 
 This data theme currently has the following association roles:
 
-* Address.[component](#component) : stat:AddressComponent
-* Address.[parcel](#parcel) : CadastralParcel
-* Address.[parentAddress](#parentAddress) : Address
-* Address.[building](#building) : bui:Building, AbstractConstruction
-* AddressAreaName.[namedPlace](#namedPlace) : gn:NamedPlace
-* AddressComponent.[situatedWithin](#situatedWithin) : AddressComponent
-* AdminUnitName.[adminUnit](#adminUnit) : au:AdministrativeUnit
-* ThoroughfareName.[transportLink](#transportLink) : tn:TransportLink
-* Address.locator.AddressLocator.[withinScopeOf](#withinScopeOf) : AddressComponent
-* AddressRepresentation.[addressFeature](#addressFeature) : Address
+* Address.[component](#component): AddressComponent
+* Address.[parcel](#parcel): CadastralParcel
+* Address.[parentAddress](#parentAddress): Address
+* Address.[building](#building): Building, AbstractConstruction
+* AddressAreaName.[namedPlace](#namedPlace): gn:NamedPlace
+* AddressComponent.[situatedWithin](#situatedWithin): AddressComponent
+* AdminUnitName.[adminUnit](#adminUnit): au:AdministrativeUnit
+* ThoroughfareName.[transportLink](#transportLink): tn:TransportLink
+* Address.locator.AddressLocator.[withinScopeOf](#withinScopeOf): AddressComponent
+* AddressRepresentation.[addressFeature](#addressFeature): Address
 
 **Reference(s)**: 
 
@@ -41,16 +41,15 @@ brokenLink <a name="brokenLink"/>  |  XML document '$filename', $featureType '$g
 
 The namespace prefixes used as described in [README.md](http://inspire.ec.europa.eu/id/ats/data-ad/3.1/ad-ia/README#namespaces).
 
-Abbreviation                                               |  XPath expression
----------------------------------------------------------- | -------------------------------------------------------------------------
-component <a name ="component"></a>	| //schema-element(ad:Address)/ad:component/@xlink:href
-parcel <a name ="parcel"></a>	| //schema-element(ad:Address)/ad:parcel/@xlink:href
-parentAddress <a name ="parentAddress"></a>	| //schema-element(ad:Address)/ad:parentAddress/@xlink:href
-building <a name ="building"></a>	| //schema-element(ad:Address)/ad:building/@xlink:href
-namedPlace <a name ="namedPlace"></a>	| //schema-element(ad:AddressAreaName)/ad:namedPlace/@xlink:href
-situatedWithin <a name ="situatedWithin"></a>	| //schema-element(ad:ThoroughfareName)/ad:situatedWithin/@xlink:href or //schema-element(ad:AddressAreaName)/ad:situatedWithin/@xlink:href or //schema-element(ad:PostalDescriptor)/ad:situatedWithin/@xlink:href or 
-adminUnit <a name ="adminUnit"></a>	| //schema-element(ad:AdminUnitName)/ad:adminUnit/@xlink:href
-admUnit <a name ="admUnit"></a>	| //schema-element(ad:AdministrativeBoundary)/ad:admUnit/@xlink:href and //schema-element(ad:AdminUnitName)/ad:admUnit/@xlink:href
-transportLink <a name ="transportLink"></a>	| //schema-element(ad:ThoroughfareName)/ad:transportLink/@xlink:href
-withinScopeOf <a name ="withinScopeOf"></a>	| //schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:withinScopeOf/@xlink:href
-addressFeature <a name ="addressFeature"></a>	| //schema-element(ad:AddressRepresentation)/ad:addressFeature/@xlink:href
+Abbreviation                         |  XPath expression    | Multiplicity    | Voidable
+------------------------------------ | ---------------------|-----------------|------------
+component <a name ="component"></a>	| //schema-element(ad:Address)/ad:component/@xlink:href | 1..\* | No
+parcel <a name ="parcel"></a>	| //schema-element(ad:Address)/ad:parcel/@xlink:href | 0..\* | Yes
+parentAddress <a name ="parentAddress"></a>	| //schema-element(ad:Address)/ad:parentAddress/@xlink:href | 0..1 | Yes
+building <a name ="building"></a>	| //schema-element(ad:Address)/ad:building/@xlink:href | 0..\* | Yes
+namedPlace <a name ="namedPlace"></a>	| //schema-element(ad:AddressAreaName)/ad:namedPlace/@xlink:href | 0..1 | Yes
+situatedWithin <a name ="situatedWithin"></a>	| //schema-element(ad:ThoroughfareName)/ad:situatedWithin/@xlink:href or //schema-element(ad:AddressAreaName)/ad:situatedWithin/@xlink:href or //schema-element(ad:PostalDescriptor)/ad:situatedWithin/@xlink:href or //schema-element(ad:AdminUnitName)/ad:situatedWithin/@xlink:href | 0..\* | Yes
+adminUnit <a name ="adminUnit"></a>	| //schema-element(ad:AdminUnitName)/ad:adminUnit/@xlink:href | 1 | Yes
+transportLink <a name ="transportLink"></a>	| //schema-element(ad:ThoroughfareName)/ad:transportLink/@xlink:href | 0..\* | Yes
+withinScopeOf <a name ="withinScopeOf"></a>	| //schema-element(ad:Address)/ad:locator/ad:AddressLocator/ad:withinScopeOf/@xlink:href | 0..1 | Yes
+addressFeature <a name ="addressFeature"></a>	| //schema-element(ad:AddressRepresentation)/ad:addressFeature/@xlink:href | 0..1 | Yes
